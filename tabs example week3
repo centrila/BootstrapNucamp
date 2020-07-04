@@ -28,3 +28,16 @@
                     </div>
                 </div>
         </div>
+
+
+          <!-- adding jquery-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-1" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Search</button>
+                            </div>

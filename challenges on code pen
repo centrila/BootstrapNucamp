@@ -1,3 +1,42 @@
+<!-- arrays and loops challenge 7/9/2020--->
+const firstNamesArray = ['Violet', 'Charlie', 'Veruca', 'Mike', 'Augustus'];
+const lastNamesArray = ['Beauregarde', 'Bucket', 'Salt', 'Teavee', 'Gloop'];
+firstNamesArray.reverse();
+lastNamesArray.reverse();
+for (let i = 0; i < firstNamesArray.length; i++) {
+  console.log(firstNamesArray[i] + " " + lastNamesArray[i]);
+}
+
+<!--jQuery practice hide and show banana buttons 7/9/2020-->
+<!----HTML part: ---->
+<button class="btn btn-warning" id="btnShowBanana">Show Banana</button>
+<button class="btn btn-success" id="btnShowMonkey">Show Monkey</button>
+<button class="btn btn-warning" id="btnHideBanana">Hide Banana</button>
+<button class="btn btn-success" id="btnHideMonkey">Hide Monkey</button>
+<div>
+  <img id="banana" class="collapse" src="https://i.ibb.co/82WT957/banana.png" />
+  <img id="monkey" class="collapse" src="https://i.ibb.co/VJDfnxN/monkey-w-banana.png" />
+</div>
+
+<!---JS part: --->
+$(function () {    
+  $("#btnShowBanana").click(function() {
+    $("#banana").collapse("show");
+     });
+        $("#btnHideBanana").click(function() {
+          $("#banana").collapse("hide");
+     });
+  $("#btnShowMonkey").click(function() {
+       $("#monkey").collapse("show");
+     });
+        $("#btnHideMonkey").click(function() {
+          $("#monkey").collapse("hide");
+     });
+});
+
+
+
+
 Radio Button challenge - bootstrap
 <div class="col" class="btn-group btn-group-toggle"  data-toggle="buttons">
   <label class="btn btn-success" "btn btn-secondary active" >
@@ -127,3 +166,5 @@ drinks.splice(0,1,'lemonade');
 // you do not need to change the line below
 document.querySelector('#challenge7').textContent = drinks.join(', ');
 /****************** End of Challenge 7 ********************/
+
+
